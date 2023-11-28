@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Adicione estilos específicos para a página de dúvidas aqui */
+        .accordion {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .panel {
+            display: none;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .accordion:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DÚVIDAS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina-inicial.html">Página Inicial</a></li>
+            <li><a href="codigos-basicos.html">Códigos Básicos</a></li>
+            <li><a href="Configurando-servidor.html">Configurando o Servidor</a></li>
+            <li><a href="hospedar.html">Hospedagem e Segurança</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="duvidas-section">
+            <h2>Tire Suas Dúvidas!</h2>
+
+            <div class="accordion" onclick="togglePanel('faq1')">O que é necessário para começar?</div>
+            <div id="faq1" class="panel">
+                <p>Para começar, você precisará de um editor de código, como o Visual Studio Code, e um navegador web.</p>
+            </div>
+
+            <div class="accordion" onclick="togglePanel('faq2')">Como estruturar meu projeto?</div>
+            <div id="faq2" class="panel">
+                <p>Organize seu projeto com pastas, por exemplo: "Meu site" contendo index.html, styles.css e scripts.js.</p>
+            </div>
+
+            <div class="accordion" onclick="togglePanel('faq3')">Preciso ser um especialista em design?</div>
+            <div id="faq3" class="panel">
+                <p>Não, mas é útil ter noções básicas. Utilize recursos online e pratique para aprimorar suas habilidades.</p>
+            </div>
+            <!-- Adicione mais perguntas e respostas conforme necessário -->
+            <div class="accordion" onclick="togglePanel('faq4')">Como faço para adicionar imagens ao meu site?</div>
+            <div id="faq4" class="panel">
+            <p>Para adicionar imagens ao seu site, coloque o arquivo da imagem na mesma pasta do seu arquivo HTML e use a tag &lt;img&gt; para exibi-la. Por exemplo:</p>
+            <code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code>
+            </div>
+            <div class="accordion" onclick="togglePanel('faq5')">Posso usar vídeos em meu site?</div>
+           <div id="faq5" class="panel">
+           <p>Sim, você pode incorporar vídeos ao seu site. Use a tag &lt;video&gt; do HTML5 para incorporar vídeos locais ou incorporar vídeos do YouTube usando a tag &lt;iframe&gt;.</p>
+           <code>&lt;video width="640" height="360" controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;</code>
+           </div>
+
+          <div class="accordion" onclick="togglePanel('faq6')">Como posso tornar meu site responsivo?</div>
+          <div id="faq6" class="panel">
+          <p>Torne seu site responsivo usando técnicas de design responsivo. Utilize unidades relativas em vez de unidades fixas, como porcentagens ou "em". Além disso, use consultas de mídia CSS para ajustar o layout em diferentes tamanhos de tela.</p>
+          <code>@media screen and (max-width: 600px) { /* Estilos para telas menores */ }</code>
+          </div>
+
+        <div class="accordion" onclick="togglePanel('faq7')">É necessário aprender JavaScript?</div>
+         <div id="faq7" class="panel">
+         <p>Embora não seja estritamente necessário, aprender JavaScript pode adicionar interatividade e dinamismo ao seu site. Comece com conceitos básicos, como manipulação do DOM e eventos.</p>
+        </div>
+    </section>
+    <p>Ainda tem mais dúvidas? Estamos aqui para ajudar!</p>
+    <a href="https://wa.me/+5511959488587" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-logo.png" alt="WhatsApp Logo" width="50" height="50"> 
+    </a>
+
+
+    </main>
+    <footer>
+        <p><strong>Copyright<br> &copy; 2023 - Todos os direitos reservados</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

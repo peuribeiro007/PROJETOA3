@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando o Servidor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Adicione estilos específicos para a página de configuração do servidor aqui */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        h5 {
+            background-color: rgb(67, 115, 160);
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Configurando o Servidor</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina-inicial.html">Página Inicial</a></li>
+            <li><a href="codigos-basicos.html">Códigos Básicos</a></li>
+            <li><a href="hospedar.html">Hospedagem e Segurança</a></li>
+            <li><a href="duvidas.html">Dúvidas</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h5>PARA CONFIGURAR O SERVIDOR IREMOS UTILIZAR O node.js E O express.</h5>
+            <p><strong>NODEJS: </strong></p>
+            <ol>
+                <li>Instale o Node.js no seu computador (<a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>).</li>
+                <li>Abra a pasta do projeto no terminal e execute o comando para instalar as dependências:
+                    <code>npm install</code>.</li>
+                <li>Para iniciar o servidor, execute o comando:
+                    <code>node app.js</code>.</li>
+            </ol>
+
+            <p><strong>EXPRESS: </strong></p>
+            <ol>
+                <li>Instale o Express no seu projeto:
+                    <code>npm install express</code>.</li>
+                <li>Crie um arquivo chamado "app.js" para configurar o servidor.</li>
+                <li>No final do arquivo, adicione a seguinte linha de código:
+                    <code>module.exports = app;</code>.</li>
+                <li>Execute o comando:
+                    <code>node app.js</code>.</li>
+                <li>Abra um navegador e acesse <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+                    para ver o site em funcionamento.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Exemplo de Arquivo app.js</h2>
+            <p>Abaixo está um exemplo básico de como pode ser o conteúdo do arquivo "app.js" para configurar o servidor:</p>
+            <img src="app.png" alt="Exemplo de arquivo app.js">
+        </section>
+    </main>
+    </body>
+
+    <footer>
+        <p><strong>Copyright<br> &copy; 2023 - Todos os direitos reservados</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</html>
+

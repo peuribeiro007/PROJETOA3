@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    padding: auto;
+    background-image: url('fundo1.png');
+    background-size: cover;
+    background-position: center;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para a barra de navegação*/
+nav {
+    background:linear-gradient(to right,#ba1cbc,#13c9f2, #048694,#4ad9b0,#93d973);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    margin: 5;
+    padding: 5;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: linear-gradient(to right,#ba1cbc,#13c9f2, #0cdbf2,#4ad9b0,#93d973);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ecf0f1;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #3498db; /* Azul */
+}
+
+h3 {
+    color: #3498db; /* Azul */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Estilo para o Botão Gradiente */
+.btn-gradient {
+    display: inline-block;
+    padding: 1px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(to right, #3498db, #2980b9); /* Azul */
+    color: #fff;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #2980b9, #3498db); /* Azul */
+}
+
+h5 {
+    background: linear-gradient(to right, rgb(52, 93, 121), #14c6d34b); /* Gradiente rosa */
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: linear-gradient(to right, #25d366, #93d973); /* Cor verde do WhatsApp */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+    h1, h2, h3, p {
+        text-align: center;
+    }
+    .elemento-para-ocultar {
+        display: none;
+    }
+}
